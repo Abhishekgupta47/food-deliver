@@ -7,41 +7,59 @@
 :root{
     --navbar-height:59px;
 }
+
+
+
 /* Navigation Bar */
+
+
+
+
 #navbar{
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0px;
 }
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left:0px;
     height: 100%;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
 }
-#navbar{
-    position: relative;
-}
+
+
+
 /* Navigation bar: logo and image */
+
+
+
 #logo{
     margin: 10px 34px;
 }
 #logo img{
     height: 60px;
     margin: 3px 6px;
-    /* size: 145px; */
 
 }
+
+
 /* Navigation bar : list styling */
+
+
 
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhai'cursive;
 }
 
 #navbar ul li{
-    /* color: white; */
+    
     list-style: none;
     font-size: 1.3rem;
 }
@@ -57,20 +75,28 @@
     background-color: white;
 }
 
+
+
 /* home section */
+
+
+
+
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 400px;
+    height: 578px;
     justify-content: center;
     align-items: center;
 }
 #home::before{
     content: "";
-    background:url('../bg3.jpg') no-repeat center center/cover;
+    background:url('../bg1.jpg') no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    height: 642px;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
@@ -81,13 +107,94 @@
     font-family: 'Bree Serif',serif;
 }
 #home p{
-    color: white;
+    
+    color: whitesmoke;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif',serif;
 }
+
+
+/* services section */
+
+
+
+ #services{ 
+    margin: 34px;
+    display: flex;
+ } 
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(245, 236, 224);
+ } 
+#services .box img{
+    width: 170px;
+    height: 160px;
+    margin:auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#services{}
+
+
+/* Client- section */
+
+
+#client-section{
+    position: relative;
+   height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/food-deliver/bg2.jpg')no-repeat center center/cover;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#clients img{
+    height: 130px;
+    
+}
+.client-item{
+    padding: 34px;
+}
+
+
 /* utility classes */
 .h-primary{
+    font-family: 'Bree Serif', serif;
     font-size: 3.8rem;
-    padding: 22px;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size:  2.3rem;
+    padding: 12px;
+} 
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
 }
